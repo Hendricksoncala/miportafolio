@@ -37,7 +37,7 @@ const { description, title } = Astro.props
     <Footer />
     <style is:global>
       :root {
-        background: #23272e;
+        color-scheme: light #23272e;
       }
 
       html {
@@ -46,13 +46,11 @@ const { description, title } = Astro.props
       }
 
       body {
-        color: black; 
+        color: rgba(17, 17, 17, 0.9);
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         overscroll-behavior: none;
-        background:#23272e;
-        
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -63,7 +61,7 @@ const { description, title } = Astro.props
 
       @media (prefers-color-scheme: dark) {
         body {
-          color: #000000e6;
+          color: rgba(255, 255, 255, 0.9);
         }
       }
 

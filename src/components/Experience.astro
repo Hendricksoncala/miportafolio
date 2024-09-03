@@ -1,22 +1,27 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
+import React from "./icons/React.astro"
+import NextJS from "./icons/NextJS.astro"
+
 const EXPERIENCE = [
 {
-    date: "Actualmente...",
-    title: "Creador de Contenido",
-    company: "Twitch",
-    description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
-    link: "https://twitch.tv/midudev",
+    date: "",
+    title: "Frontend",
+    company: "JavaScript,  React, Astro, Lit, HTML y CSS",
+    
   },
+
+
   {
-    date: "Actualmente...",
-    title: "Creador de Contenido",
-    company: "Twitch",
-    description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
-    link: "https://twitch.tv/midudev",
-  },
+    date: "",
+    title: "Backend",
+    company: "MongoDB, MySQL, Express, NodeJS",
+    description:`
+
+    
+  `
+    
+},
   // {
   //   date: "Septiembre 2022",
   //   title: "Principal Frontend Engineer",
@@ -32,6 +37,7 @@ const EXPERIENCE = [
     EXPERIENCE.map((experience) => (
       <li class="">
         <ExperienceItem {...experience} />
+        
       </li>
     ))
   }
