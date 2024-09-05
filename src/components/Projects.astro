@@ -8,7 +8,7 @@ import LinkButton from "./LinkButton.astro"
 const TAGS = {
   JAVASCRIPT: {
     name: "JavaScript",
-    class: "bg-black text-white",
+    class: "bg-[#f3ba2f] text-white",
     icon: "dd"
   },
   LIT: {
@@ -16,6 +16,37 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: "dd",
   },
+  HTML: {
+    name: "HTML",
+    class: "bg-[#e84c24] text-white",
+    icon: "dd",
+  },
+  CSS: {
+    name: "css",
+    class: "bg-[#003159] text-white",
+    icon: "dd",
+  },
+  EXPRESS: {
+    name: "Express",
+    class: "bg-black text-white",
+    icon: "dd",
+  },
+  NODEJS: {
+    name: "NodeJS",
+    class: "bg-black text-white",
+    icon: "dd",
+  },
+  MONGODB: {
+    name: "MongoDB",
+    class: "bg-[#09603c] text-white",
+    icon: "dd",
+  },
+  REACT: {
+    name: "React",
+    class: "bg-[#003159] text-white",
+    icon: "dd",
+  },
+  
 }
 const PROJECTS = [
   {
@@ -31,8 +62,24 @@ const PROJECTS = [
     description:
       "Plataforma funcional para la administracion de asientos, carteleras y facturas de un cine, hecha con React, JavaScript, MongoDB, Express",
     link: "https://github.com/Hendricksoncala/proyectoMongoDB",
-    image: "/projects/movisApp2.png",
-    tags: [TAGS.JAVASCRIPT],
+    image: "/projects/cinefigma.png",
+    tags: [TAGS.JAVASCRIPT, TAGS.EXPRESS, TAGS.REACT, TAGS.MONGODB,TAGS.NODEJS],
+  },
+  {
+    title: "SpaceX - plataforma de informacion de SpaceX",
+    description:
+      "Plataforma funcional para visualizar la informacion de lanzamientos de SpaceX y sus cohetes",
+    link: "https://github.com/Hendricksoncala/Space-X-Web2.git",
+    image: "/projects/spacex.png",
+    tags: [TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
+  },
+  {
+    title: "DeadConsole - Videojuego",
+    description:
+      "Videojuego hecho con javascript simulando una consola en el que podras tener un entorno arcade.",
+    link: "https://github.com/Hendricksoncala/Ejemplo-POO-juego",
+    image: "/projects/deadconsole.png",
+    tags: [TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
   },
 ]
 ---
