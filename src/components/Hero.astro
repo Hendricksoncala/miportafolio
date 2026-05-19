@@ -1,17 +1,19 @@
 ---
-const personalImageAlt = "Miguel Ángel"
+const personalImageAlt = "Hendrickson Ruiz"
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
 import SocialPill from "@/components/SocialPill.astro"
-import HojaDeVidaHendrickson from "../../public/HojaDeVidaHendrickson.pdf"
+
+// Eliminamos el import de arriba y usamos la ruta directa en el HTML
+const cvPath = "/HendricksonAlexanderRuizCala.pdf"
 ---
 
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
     <img
-      class="rounded-full shadow-lg size-16"
-      src="./me2.png"
+      class="rounded-full shadow-lg size-16 object-cover"
+      src="/me.png"
       alt={personalImageAlt}
     />
     <a
@@ -29,24 +31,22 @@ import HojaDeVidaHendrickson from "../../public/HojaDeVidaHendrickson.pdf"
     Hey, soy Hendrickson
   </h1>
   <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-[#ebcda2] [&>strong]:text-yellow-600 [&>strong]:font-semibold dark:text-gray-300 text-pretty"
   >
-    <strong
-      >Espiritu emprendedor y un constante interes por la tecnologia</strong
-    > de Bucaramanga, Santander. Con ganas de trabajar en equipo y impactar positivamente con mis habilidades.
+    <strong>Data Analyst y Desarrollador de Software</strong> de Bucaramanga, Santander. Apasionado por la ingeniería de datos, las arquitecturas cloud y la creación de soluciones tecnológicas de alto impacto.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:hendricksoncala@gmail.com">
       <MailIcon class="size-4" />
       Contáctame
     </SocialPill>
-    <SocialPill href="https://www.linkedin.com/in/hendrickson-alexander-58b9942b7/">
+    <SocialPill href="https://linkedin.com/in/HendricksonCala">
       <LinkedInIcon class="size-4" />
       LinkedIn
     </SocialPill>
-    <SocialPill href={HojaDeVidaHendrickson} download="HojaDeVidaHendrickson">
+    <SocialPill href={cvPath} download="HendricksonAlexanderRuizCala.pdf">
       <MailIcon class="size-4" />
-      HojaDeVida
+      Hoja de Vida
     </SocialPill>
   </nav>
 </div>
