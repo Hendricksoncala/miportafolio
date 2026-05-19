@@ -1,16 +1,19 @@
+/* empty css                               */
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, e as addAttribute, s as spreadAttributes, f as createAstro, d as renderSlot, h as renderComponent } from '../astro_Ck7ycVT5.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Badge, a as $$SocialPill, b as $$LinkedIn, c as $$SectionContainer, d as $$Layout } from './components_CG1pg-K6.mjs';
+import { $ as $$Badge, a as $$SocialPill, b as $$LinkedIn, c as $$SectionContainer, d as $$Layout } from './components_B3vay0ES.mjs';
 import 'clsx';
 
 const $$AboutMe = createComponent(($$result, $$props, $$slots) => {
-  const personalImageAlt = "Hendrickson";
-  return renderTemplate`${maybeRenderHead()}<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"> <div class="[&>p]:mb-4 [&>p>strong]:text-[#ebcda2] [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"> <p>
-Me llamo Hendrickson Alexander. Comencé en el mundo de la programación a los 16 años, con una simple calculadora. Hoy en día, estoy <strong>Explorando nuevas tecnologías para mejorar mi capacidad de crear e innovar en cualquier proyecto que se presente..</strong>.
+  const personalImageAlt = "Hendrickson Ruiz";
+  return renderTemplate`${maybeRenderHead()}<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"> <div class="[&>p]:mb-4 [&>p>strong]:text-[#ebcda2] [&>p>strong]:font-semibold text-pretty order-2 md:order-1"> <p>
+Me llamo <strong>Hendrickson Alexander Ruiz</strong>. Inicié en el mundo del desarrollo de software a los 16 años y, hoy en día, me desempeño como <strong>Data Analyst y desarrollador</strong>, combinando la ingeniería con el poder de los datos para construir soluciones eficientes y escalables.
 </p> <p>
-Algunos de mis éxitos incluyen <strong> Desarrollar una página web para gestionar un cine</strong>. si bien fue un proyecto simple, me permitió experimentar con nuevas tecnologías y descubrir formas más eficientes de organizar mis proyectos.
-</p> </div> <img width="200" height="200" src="/me.png"${addAttribute(personalImageAlt, "alt")} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 " style="object-position: 50% 50%"> </article>`;
+En mi trayectoria, he tenido la oportunidad de formar parte de equipos globales en <strong>EPAM Systems</strong>, donde he trabajado optimizando flujos de datos y refinando arquitecturas. Mi enfoque está en la intersección del <strong>desarrollo de software y la ingeniería de datos en la nube</strong>, buscando siempre automatizar procesos y extraer valor real de la información.
+</p> <p>
+Actualmente compagino mi carrera profesional con mis estudios de <strong>Ingeniería de Sistemas</strong>. Me apasiona afrontar retos complejos, diseñar prototipos tecnológicos orientados a la sostenibilidad y mantenerme en constante evolución, explorando desde arquitecturas cloud robustas hasta nuevas tecnologías de vanguardia.
+</p> </div> <img width="200" height="200" src="/me.png"${addAttribute(personalImageAlt, "alt")} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20" style="object-position: 50% 50%"> </article>`;
 }, "/home/hendrickson/NUEVOPORFOLIO/porfolio.dev/src/components/AboutMe.astro", void 0);
 
 const $$Astro$a = createAstro();
@@ -58,7 +61,13 @@ const $$Experience = createComponent(($$result, $$props, $$slots) => {
     {
       date: "",
       title: "Backend",
-      company: "MongoDB, MySQL, Express, NodeJS",
+      company: "MongoDB, Postgres , MySQL, Express, NodeJS",
+      description: "el pepe1"
+    },
+    {
+      date: "",
+      title: "Data Analysis",
+      company: "Pyspark, Hadoop , Spark, AWS, AWS S3, EC2, Lambda y Glue",
       description: "el pepe1"
     }
   ];
@@ -181,19 +190,18 @@ const $$Mail = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<svg${spreadAttributes(Astro2.props)} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path><path d="M3 6l9 6l9 -6"></path><path d="M15 18h6"></path><path d="M18 15l3 3l-3 3"></path></svg>`;
 }, "/home/hendrickson/NUEVOPORFOLIO/porfolio.dev/src/components/icons/Mail.astro", void 0);
 
-const HojaDeVidaHendrickson = "/_astro/HojaDeVidaHendrickson.2ZBD66qL.pdf";
-
 const $$Hero = createComponent(($$result, $$props, $$slots) => {
-  const personalImageAlt = "Miguel \xC1ngel";
-  return renderTemplate`${maybeRenderHead()}<div class="max-w-xl"> <div class="flex gap-4 mb-4"> <img class="rounded-full shadow-lg size-16" src="./me2.png"${addAttribute(personalImageAlt, "alt")}> <a href="https://linkedin.com/in/HendricksonCala" target="_blank" rel="noopener" class="flex items-center transition md:justify-center md:hover:scale-105"> ${renderComponent($$result, "Badge", $$Badge, {}, { "default": ($$result2) => renderTemplate`Disponible para trabajar` })} </a> </div> <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
+  const personalImageAlt = "Hendrickson Ruiz";
+  const cvPath = "/HendricksonAlexanderRuizCala.pdf";
+  return renderTemplate`${maybeRenderHead()}<div class="max-w-xl"> <div class="flex gap-4 mb-4"> <img class="rounded-full shadow-lg size-16 object-cover" src="/me.png"${addAttribute(personalImageAlt, "alt")}> <a href="https://linkedin.com/in/HendricksonCala" target="_blank" rel="noopener" class="flex items-center transition md:justify-center md:hover:scale-105"> ${renderComponent($$result, "Badge", $$Badge, {}, { "default": ($$result2) => renderTemplate`Disponible para trabajar` })} </a> </div> <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
 Hey, soy Hendrickson
-</h1> <p class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"> <strong>Espiritu emprendedor y un constante interes por la tecnologia</strong> de Bucaramanga, Santander. Con ganas de trabajar en equipo y impactar positivamente con mis habilidades.
+</h1> <p class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-[#ebcda2] [&>strong]:text-yellow-600 [&>strong]:font-semibold dark:text-gray-300 text-pretty"> <strong>Data Analyst y Desarrollador de Software</strong> de Bucaramanga, Santander. Apasionado por la ingeniería de datos, las arquitecturas cloud y la creación de soluciones tecnológicas de alto impacto.
 </p> <nav class="flex flex-wrap gap-4 mt-8"> ${renderComponent($$result, "SocialPill", $$SocialPill, { "href": "mailto:hendricksoncala@gmail.com" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "MailIcon", $$Mail, { "class": "size-4" })}
 Contáctame
-` })} ${renderComponent($$result, "SocialPill", $$SocialPill, { "href": "https://www.linkedin.com/in/hendrickson-alexander-58b9942b7/" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "LinkedInIcon", $$LinkedIn, { "class": "size-4" })}
+` })} ${renderComponent($$result, "SocialPill", $$SocialPill, { "href": "https://linkedin.com/in/HendricksonCala" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "LinkedInIcon", $$LinkedIn, { "class": "size-4" })}
 LinkedIn
-` })} ${renderComponent($$result, "SocialPill", $$SocialPill, { "href": HojaDeVidaHendrickson, "download": "HojaDeVidaHendrickson" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "MailIcon", $$Mail, { "class": "size-4" })}
-HojaDeVida
+` })} ${renderComponent($$result, "SocialPill", $$SocialPill, { "href": cvPath, "download": "HendricksonAlexanderRuizCala.pdf" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "MailIcon", $$Mail, { "class": "size-4" })}
+Hoja de Vida
 ` })} </nav> </div>`;
 }, "/home/hendrickson/NUEVOPORFOLIO/porfolio.dev/src/components/Hero.astro", void 0);
 

@@ -1,15 +1,17 @@
 import { defineConfig } from 'astro/config';
-import netlify from '@astrojs/netlify'; // O el adaptador que tengas
-import path from 'path'; // Añade esta importación de Node
+import netlify from '@astrojs/netlify';
+import tailwind from '@astrojs/tailwind';
+import path from 'path';
 
 export default defineConfig({
   output: 'server',
   adapter: netlify(),
-  // Añade este bloque de configuración de Vite:
+  integrations: [tailwind()],
   vite: {
     resolve: {
       alias: {
-        '@': path.resolve('./src'),
+        // Esto fuerza la ruta absoluta real desde la raíz del proyecto
+        '@': path.resolve(process.cwd(), './src'),
       },
     },
   },

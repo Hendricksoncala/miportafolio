@@ -1,8 +1,10 @@
+/* empty css                               */
+import 'autoprefixer';
+import 'tailwindcss';
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as renderSlot, e as addAttribute, f as createAstro, s as spreadAttributes, g as createTransitionScope, h as renderComponent, i as renderHead } from '../astro_Ck7ycVT5.mjs';
 import 'kleur/colors';
 import 'html-escaper';
 import 'clsx';
-/* empty css                               */
 
 const $$Badge = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="flex items-center "> <span class="relative inline-flex overflow-hidden rounded-full p-[1px]"> <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span> <div class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-green-800 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap"> ${renderSlot($$result, $$slots["default"])} </div> </span> </div>`;
